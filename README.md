@@ -23,10 +23,16 @@ angular.module('myApp', [
 ]);
 ```
 
-Now add the directive to an anchor element e.g.
+Example
 
+In a controller, set some text to the scope
 ```
-<a href-from-text="azzamallow@github.com"></a> <!-- href="mailto:azzamallow@github.com" -->
+$scope.text = 'azzamallow@github.com';
+```
+
+Reference that text in the directive to produce the href
+```
+<a href-from-text="{{text}}"></a> <!-- href="mailto:azzamallow@github.com" -->
 ```
 
 support
